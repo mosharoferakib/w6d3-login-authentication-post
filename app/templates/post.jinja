@@ -1,0 +1,16 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+
+<form action="" method="post">
+<h2 style="color:aquamarine">Post your favorite car pic collections here!</h2>
+{{ form.hidden_tag() }}
+
+<p>
+    {{ form.body.label }}<br>
+    {{ form.body(size=32) }}
+</p>
+<p>{{ form.submit() }}</p>
+</form>
+
+{% endblock %}
